@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "dogmod",
+	"version": "${version}",
+	"name": "dog mod",
+	"description": "dog",
+	"authors": [
+		"victor"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/dogmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.victor.dogmod.DogMod"
+		],
+		"client": [
+			"net.victor.dogmod.DogModClient"
+		],
+		"fabric-datagen": [
+			"net.victor.dogmod.DogModDataGenerator"
+		]
+	},
+	"mixins": [
+		"dogmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
