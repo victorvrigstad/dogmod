@@ -2,6 +2,8 @@ package net.victor.dogmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.victor.dogmod.item.ModItemGroups;
+import net.victor.dogmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +13,7 @@ public class DogMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
