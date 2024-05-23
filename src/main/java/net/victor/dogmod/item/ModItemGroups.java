@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.victor.dogmod.DogMod;
+import net.victor.dogmod.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup DOG_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -19,6 +20,9 @@ public class ModItemGroups {
                         entries.add(ModItems.DOG2);
 
                         entries.add(Items.PUFFERFISH);
+
+                        entries.add((ModBlocks.DOG_BLOCK));
+                        entries.add((ModBlocks.DOG_BLOCK2));
 
                     }).build());
 

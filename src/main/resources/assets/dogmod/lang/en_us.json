@@ -2,5 +2,8 @@
   "item.dogmod.dog": "Dog",
   "item.dogmod.dog2": "Dog2",
 
+  "block.dogmod.dog_block": "Block of Dog",
+  "block.dogmod.dog_block2": "Block of Dog2",
+
   "itemgroup.dog": "Dog Group"
 }
