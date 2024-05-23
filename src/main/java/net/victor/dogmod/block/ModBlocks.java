@@ -10,12 +10,17 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.victor.dogmod.DogMod;
+import net.victor.dogmod.block.custom.SoundBlock;
 
 public class ModBlocks {
     public static final Block DOG_BLOCK = registerBlock("dog_block",
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.SLIME)));
     public static final Block DOG_BLOCK2 = registerBlock("dog_block2",
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.SLIME)));
+
+
+    public static final Block SOUND_BLOCK = registerBlock("sound_block",
+            new SoundBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.SLIME)));
 
 
     private static Block registerBlock(String name, Block block) {

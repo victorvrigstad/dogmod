@@ -2,6 +2,7 @@ package net.victor.dogmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.victor.dogmod.block.ModBlocks;
 import net.victor.dogmod.item.ModItemGroups;
 import net.victor.dogmod.item.ModItems;
@@ -18,5 +19,7 @@ public class DogMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.SVARTBIT, 160);
 	}
 }

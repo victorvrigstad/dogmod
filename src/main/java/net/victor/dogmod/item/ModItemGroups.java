@@ -19,10 +19,17 @@ public class ModItemGroups {
                         entries.add(ModItems.DOG);
                         entries.add(ModItems.DOG2);
 
+                        entries.add(ModItems.METAL_DETECTOR);
+
+                        entries.add(ModItems.GRAPE);
+                        entries.add(ModItems.SVARTBIT);
+
                         entries.add(Items.PUFFERFISH);
 
                         entries.add((ModBlocks.DOG_BLOCK));
                         entries.add((ModBlocks.DOG_BLOCK2));
+
+                        entries.add((ModBlocks.SOUND_BLOCK));
 
                     }).build());
 

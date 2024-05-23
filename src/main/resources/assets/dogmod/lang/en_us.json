@@ -2,8 +2,15 @@
   "item.dogmod.dog": "Dog",
   "item.dogmod.dog2": "Dog2",
 
+  "item.dogmod.metal_detector": "Metal Detector",
+
+  "item.dogmod.grape": "Grape",
+  "item.dogmod.svartbit": "Svartbit",
+
   "block.dogmod.dog_block": "Block of Dog",
   "block.dogmod.dog_block2": "Block of Dog2",
+
+  "block.dogmod.sound_block": "Block of Sound",
 
   "itemgroup.dog": "Dog Group"
 }
