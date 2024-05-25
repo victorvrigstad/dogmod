@@ -21,6 +21,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS)
+                .add(ModBlocks.BULB_ORE)
                 .forceAddTag(BlockTags.GOLD_ORES)
                 .forceAddTag(BlockTags.EMERALD_ORES)
                 .forceAddTag(BlockTags.REDSTONE_ORES)
@@ -33,10 +34,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.DOG_BLOCK)
                 .add(ModBlocks.DOG_BLOCK2)
-                .add(ModBlocks.SOUND_BLOCK);
+
+                .add(ModBlocks.BULB_BLOCK)
+
+                .add(ModBlocks.SOUND_BLOCK)
+                .add(ModBlocks.BULB_ORE)
+                .add(ModBlocks.DEEPSLATE_BULB_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.DOG_BLOCK);
+                .add(ModBlocks.DOG_BLOCK)
+                .add(ModBlocks.BULB_BLOCK)
+                .add(ModBlocks.BULB_ORE)
+                .add(ModBlocks.DEEPSLATE_BULB_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DOG_BLOCK2);

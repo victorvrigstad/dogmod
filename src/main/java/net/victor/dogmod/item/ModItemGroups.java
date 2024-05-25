@@ -21,6 +21,15 @@ public class ModItemGroups {
 
                         entries.add(ModItems.METAL_DETECTOR);
 
+                        entries.add(ModItems.RAW_BULB);
+                        entries.add(ModItems.BULB_INGOT);
+
+                        entries.add(ModItems.BULB_PICKAXE);
+                        entries.add(ModItems.BULB_AXE);
+                        entries.add(ModItems.BULB_SHOVEL);
+                        entries.add(ModItems.BULB_SWORD);
+                        entries.add(ModItems.BULB_HOE);
+
                         entries.add(ModItems.GRAPE);
                         entries.add(ModItems.SVARTBIT);
 
@@ -28,6 +37,10 @@ public class ModItemGroups {
 
                         entries.add((ModBlocks.DOG_BLOCK));
                         entries.add((ModBlocks.DOG_BLOCK2));
+
+                        entries.add((ModBlocks.BULB_BLOCK));
+                        entries.add((ModBlocks.BULB_ORE));
+                        entries.add((ModBlocks.DEEPSLATE_BULB_ORE));
 
                         entries.add((ModBlocks.SOUND_BLOCK));
 

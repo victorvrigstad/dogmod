@@ -4,11 +4,24 @@
 
   "item.dogmod.metal_detector": "Metal Detector",
 
+  "item.dogmod.raw_bulb": "Raw Bulb",
+  "item.dogmod.bulb_ingot": "Bulb Ingot",
+
+  "item.dogmod.bulb_pickaxe": "Bulb Pickaxe",
+  "item.dogmod.bulb_axe": "Bulb Axe",
+  "item.dogmod.bulb_sword": "Bulb Sword",
+  "item.dogmod.bulb_shovel": "Bulb Shovel",
+  "item.dogmod.bulb_hoe": "Bulb Hoe",
+
   "item.dogmod.grape": "Grape",
   "item.dogmod.svartbit": "Svartbit",
 
   "block.dogmod.dog_block": "Block of Dog",
   "block.dogmod.dog_block2": "Block of Dog2",
+
+  "block.dogmod.bulb_block": "Block of Bulb",
+  "block.dogmod.bulb_ore": "Bulb Ore",
+  "block.dogmod.deepslate_bulb_ore": "Deepslate Bulb Ore",
 
   "block.dogmod.sound_block": "Block of Sound",
 

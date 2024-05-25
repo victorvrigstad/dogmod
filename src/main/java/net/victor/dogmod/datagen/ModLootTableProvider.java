@@ -29,6 +29,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.DOG_BLOCK);
         addDrop(ModBlocks.DOG_BLOCK2);
+        addDrop(ModBlocks.BULB_BLOCK);
+
+        addDrop(ModBlocks.BULB_ORE, copperLikeOreDrops(ModBlocks.BULB_ORE, ModItems.RAW_BULB));
+        addDrop(ModBlocks.DEEPSLATE_BULB_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_BULB_ORE, ModItems.RAW_BULB));
+
 
         addDrop(ModBlocks.SOUND_BLOCK, copperLikeOreDrops(ModBlocks.SOUND_BLOCK, ModItems.GRAPE));
     }

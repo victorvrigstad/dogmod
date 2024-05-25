@@ -18,6 +18,13 @@ public class ModBlocks {
     public static final Block DOG_BLOCK2 = registerBlock("dog_block2",
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.SLIME)));
 
+    public static final Block BULB_BLOCK = registerBlock("bulb_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
+    public static final Block BULB_ORE = registerBlock("bulb_ore",
+            new Block(AbstractBlock.Settings.copy(Blocks.IRON_ORE)));
+    public static final Block DEEPSLATE_BULB_ORE = registerBlock("deepslate_bulb_ore",
+            new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)));
+
 
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
             new SoundBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.SLIME)));

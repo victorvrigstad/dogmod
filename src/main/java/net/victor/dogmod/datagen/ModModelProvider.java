@@ -18,6 +18,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DOG_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DOG_BLOCK2);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BULB_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BULB_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_BULB_ORE);
     }
 
     @Override
@@ -28,5 +32,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SVARTBIT, Models.GENERATED);
         itemModelGenerator.register(ModItems.GRAPE, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.RAW_BULB, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BULB_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.BULB_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BULB_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BULB_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BULB_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BULB_HOE, Models.HANDHELD);
     }
 }
