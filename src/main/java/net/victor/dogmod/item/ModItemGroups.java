@@ -30,10 +30,21 @@ public class ModItemGroups {
                         entries.add(ModItems.BULB_SWORD);
                         entries.add(ModItems.BULB_HOE);
 
+                        entries.add(ModItems.BULB_HELMET);
+                        entries.add(ModItems.BULB_CHESTPLATE);
+                        entries.add(ModItems.BULB_LEGGINGS);
+                        entries.add(ModItems.BULB_BOOTS);
+
+                        entries.add(ModItems.GREEN_BELL_PEPPER);
+                        entries.add(ModItems.RED_BELL_PEPPER);
+                        entries.add(ModItems.YELLOW_BELL_PEPPER);
+
+                        entries.add(ModItems.GREEN_BELL_PEPPER_SEEDS);
+                        entries.add(ModItems.RED_BELL_PEPPER_SEEDS);
+                        entries.add(ModItems.YELLOW_BELL_PEPPER_SEEDS);
+
                         entries.add(ModItems.GRAPE);
                         entries.add(ModItems.SVARTBIT);
-
-                        entries.add(Items.PUFFERFISH);
 
                         entries.add((ModBlocks.DOG_BLOCK));
                         entries.add((ModBlocks.DOG_BLOCK2));

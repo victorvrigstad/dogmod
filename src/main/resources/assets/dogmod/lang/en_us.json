@@ -13,6 +13,19 @@
   "item.dogmod.bulb_shovel": "Bulb Shovel",
   "item.dogmod.bulb_hoe": "Bulb Hoe",
 
+  "item.dogmod.bulb_helmet": "Bulb Helmet",
+  "item.dogmod.bulb_chestplate": "Bulb Chestplate",
+  "item.dogmod.bulb_leggings": "Bulb Leggings",
+  "item.dogmod.bulb_boots": "Bulb Boots",
+
+  "item.dogmod.green_bell_pepper": "Green Bell Pepper",
+  "item.dogmod.red_bell_pepper": "Red Bell Pepper",
+  "item.dogmod.yellow_bell_pepper": "Yellow Bell Pepper",
+
+  "item.dogmod.green_bell_pepper_seeds": "Green Bell Pepper Seeds",
+  "item.dogmod.red_bell_pepper_seeds": "Red Bell Pepper Seeds",
+  "item.dogmod.yellow_bell_pepper_seeds": "Yellow Bell Pepper Seeds",
+
   "item.dogmod.grape": "Grape",
   "item.dogmod.svartbit": "Svartbit",
 

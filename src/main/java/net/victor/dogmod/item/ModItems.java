@@ -2,14 +2,12 @@ package net.victor.dogmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.ToolMaterials;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.victor.dogmod.DogMod;
+import net.victor.dogmod.block.ModBlocks;
 import net.victor.dogmod.item.custom.MetalDetectorItem;
 
 public class ModItems {
@@ -28,17 +26,37 @@ public class ModItems {
             new PickaxeItem(ModToolMaterial.BULB,
                     new Item.Settings().attributeModifiers((PickaxeItem.createAttributeModifiers(ModToolMaterial.BULB, 2f, -2f)))));
     public static final Item BULB_AXE = registerItem("bulb_axe",
-            new PickaxeItem(ModToolMaterial.BULB,
+            new AxeItem(ModToolMaterial.BULB,
                     new Item.Settings().attributeModifiers((PickaxeItem.createAttributeModifiers(ModToolMaterial.BULB, 7f, -1f)))));
     public static final Item BULB_SHOVEL = registerItem("bulb_shovel",
-            new PickaxeItem(ModToolMaterial.BULB,
+            new ShovelItem(ModToolMaterial.BULB,
                     new Item.Settings().attributeModifiers((PickaxeItem.createAttributeModifiers(ModToolMaterial.BULB, 2f, -2f)))));
     public static final Item BULB_SWORD = registerItem("bulb_sword",
-            new PickaxeItem(ModToolMaterial.BULB,
+            new SwordItem(ModToolMaterial.BULB,
                     new Item.Settings().attributeModifiers((PickaxeItem.createAttributeModifiers(ModToolMaterial.BULB, 5f, -3f)))));
     public static final Item BULB_HOE = registerItem("bulb_hoe",
-            new PickaxeItem(ModToolMaterial.BULB,
+            new HoeItem(ModToolMaterial.BULB,
                     new Item.Settings().attributeModifiers((PickaxeItem.createAttributeModifiers(ModToolMaterial.BULB, 0f, -2f)))));
+
+    public static final Item BULB_HELMET = registerItem("bulb_helmet", new ArmorItem(ModArmorMaterials.BULB,
+            ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final Item BULB_CHESTPLATE = registerItem("bulb_chestplate", new ArmorItem(ModArmorMaterials.BULB,
+            ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item BULB_LEGGINGS = registerItem("bulb_leggings", new ArmorItem(ModArmorMaterials.BULB,
+            ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item BULB_BOOTS = registerItem("bulb_boots", new ArmorItem(ModArmorMaterials.BULB,
+            ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
+    public static final Item GREEN_BELL_PEPPER_SEEDS = registerItem("green_bell_pepper_seeds",
+            new AliasedBlockItem(ModBlocks.GREEN_BELL_PEPPER_CROP, new Item.Settings()));
+    public static final Item RED_BELL_PEPPER_SEEDS = registerItem("red_bell_pepper_seeds",
+            new AliasedBlockItem(ModBlocks.RED_BELL_PEPPER_CROP, new Item.Settings()));
+    public static final Item YELLOW_BELL_PEPPER_SEEDS = registerItem("yellow_bell_pepper_seeds",
+            new AliasedBlockItem(ModBlocks.YELLOW_BELL_PEPPER_CROP, new Item.Settings()));
+
+    public static final Item GREEN_BELL_PEPPER = registerItem("green_bell_pepper", new Item(new Item.Settings().food(ModFoodComponents.GREEN_BELL_PEPPER)));
+    public static final Item RED_BELL_PEPPER = registerItem("red_bell_pepper", new Item(new Item.Settings().food(ModFoodComponents.RED_BELL_PEPPER)));
+    public static final Item YELLOW_BELL_PEPPER = registerItem("yellow_bell_pepper", new Item(new Item.Settings().food(ModFoodComponents.YELLOW_BELL_PEPPER)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(DOG);

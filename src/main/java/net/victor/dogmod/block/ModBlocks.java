@@ -11,6 +11,9 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.victor.dogmod.DogMod;
 import net.victor.dogmod.block.custom.SoundBlock;
+import net.victor.dogmod.block.custom.crops.GreenBellPepperCropBlock;
+import net.victor.dogmod.block.custom.crops.RedBellPepperCropBlock;
+import net.victor.dogmod.block.custom.crops.YellowBellPepperCropBlock;
 
 public class ModBlocks {
     public static final Block DOG_BLOCK = registerBlock("dog_block",
@@ -24,6 +27,13 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_ORE)));
     public static final Block DEEPSLATE_BULB_ORE = registerBlock("deepslate_bulb_ore",
             new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)));
+
+    public static final Block GREEN_BELL_PEPPER_CROP = Registry.register(Registries.BLOCK, new Identifier(DogMod.MOD_ID, "green_bell_pepper_crop"),
+            new GreenBellPepperCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
+    public static final Block RED_BELL_PEPPER_CROP = Registry.register(Registries.BLOCK, new Identifier(DogMod.MOD_ID, "red_bell_pepper_crop"),
+            new RedBellPepperCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
+    public static final Block YELLOW_BELL_PEPPER_CROP = Registry.register(Registries.BLOCK, new Identifier(DogMod.MOD_ID, "yellow_bell_pepper_crop"),
+            new YellowBellPepperCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
 
 
     public static final Block SOUND_BLOCK = registerBlock("sound_block",

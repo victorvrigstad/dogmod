@@ -83,5 +83,34 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" #")
                 .criterion(hasItem(ModItems.BULB_INGOT), conditionsFromItem(ModItems.BULB_INGOT))
                 .offerTo(exporter);
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BULB_HELMET).input('X',
+                ModItems.BULB_INGOT)
+                .pattern("XXX")
+                .pattern("X X")
+                .criterion(hasItem(ModItems.BULB_INGOT), conditionsFromItem(ModItems.BULB_INGOT))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BULB_CHESTPLATE).input('X',
+                        ModItems.BULB_INGOT)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .criterion(hasItem(ModItems.BULB_INGOT), conditionsFromItem(ModItems.BULB_INGOT))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BULB_LEGGINGS).input('X',
+                        ModItems.BULB_INGOT)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .criterion(hasItem(ModItems.BULB_INGOT), conditionsFromItem(ModItems.BULB_INGOT))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BULB_BOOTS).input('X',
+                        ModItems.BULB_INGOT)
+                .pattern("X X")
+                .pattern("X X")
+                .criterion(hasItem(ModItems.BULB_INGOT), conditionsFromItem(ModItems.BULB_INGOT))
+                .offerTo(exporter);
     }
 }
