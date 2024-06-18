@@ -31,6 +31,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.CORAL_BLOCKS)
                 .forceAddTag(BlockTags.COAL_ORES);
 
+        getOrCreateTagBuilder(ModTags.Blocks.HARVESTABLE_CROPS)
+                .add(ModBlocks.GREEN_BELL_PEPPER_CROP)
+                .add(ModBlocks.RED_BELL_PEPPER_CROP)
+                .add(ModBlocks.YELLOW_BELL_PEPPER_CROP);
+
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.DOG_BLOCK)
                 .add(ModBlocks.DOG_BLOCK2)

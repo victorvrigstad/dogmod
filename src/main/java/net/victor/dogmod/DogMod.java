@@ -2,8 +2,11 @@ package net.victor.dogmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.UseBlockCallback;
+import net.fabricmc.fabric.api.event.player.UseItemCallback;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.victor.dogmod.block.ModBlocks;
+import net.victor.dogmod.event.UseItemHandler;
 import net.victor.dogmod.item.ModItemGroups;
 import net.victor.dogmod.item.ModItems;
 import net.victor.dogmod.util.ModLootTableModifiers;
@@ -22,6 +25,7 @@ public class DogMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModLootTableModifiers.modifyLootTables();
+		UseBlockCallback.EVENT.register(new UseItemHandler());
 
 		FuelRegistry.INSTANCE.add(ModItems.SVARTBIT, 160);
 	}

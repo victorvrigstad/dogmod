@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.DOG2);
 
                         entries.add(ModItems.METAL_DETECTOR);
+                        entries.add(ModItems.CROP_HARVESTER);
 
                         entries.add(ModItems.RAW_BULB);
                         entries.add(ModItems.BULB_INGOT);

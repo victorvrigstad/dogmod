@@ -37,6 +37,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DOG, Models.GENERATED);
         itemModelGenerator.register(ModItems.DOG2, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CROP_HARVESTER, Models.GENERATED);
         itemModelGenerator.register(ModItems.SVARTBIT, Models.GENERATED);
         itemModelGenerator.register(ModItems.GRAPE, Models.GENERATED);
 
