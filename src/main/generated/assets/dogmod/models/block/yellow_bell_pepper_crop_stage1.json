@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "dogmod:block/yellow_bell_pepper_crop_stage1"
+  }
+}

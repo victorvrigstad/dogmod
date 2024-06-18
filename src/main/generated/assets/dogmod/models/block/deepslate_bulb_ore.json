@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "dogmod:block/deepslate_bulb_ore"
+  }
+}

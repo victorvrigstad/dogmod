@@ -1,0 +1,8 @@
+// 1.20.6	2024-05-27T15:34:43.2626963	dog mod/Tags for minecraft:block
+c5f16caabf0c558ec81832ff84eab5bb21a010a1 data\minecraft\tags\blocks\needs_iron_tool.json
+260555e96acd0dff83cf7a9ac86cfc8aaa8bc44a data\dogmod\tags\blocks\metal_detector_detectable_blocks.json
+cfab2ab481bf476a645d326b87627918009b9e50 data\fabric\tags\blocks\needs_tool_level_4.json
+2220a602dfe5ec6a492ddc3d63565512df387442 data\minecraft\tags\blocks\needs_diamond_tool.json
+6b33631b63242c4e76b1f52d440e27ee6e36a159 data\dogmod\tags\blocks\harvestable_crops.json
+7abde2fc2e6b832280e8eb7561053f0571e54b14 data\minecraft\tags\blocks\needs_stone_tool.json
+2701c1dbc80871660961ae2fbe490248d935a098 data\minecraft\tags\blocks\mineable\pickaxe.json

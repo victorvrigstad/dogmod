@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "dogmod:block/bulb_block"
+    }
+  }
+}

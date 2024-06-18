@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "dogmod:item/green_bell_pepper_seeds"
+  }
+}
