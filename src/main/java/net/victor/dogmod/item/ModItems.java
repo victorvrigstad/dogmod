@@ -55,6 +55,9 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.RED_BELL_PEPPER_CROP, new Item.Settings()));
     public static final Item YELLOW_BELL_PEPPER_SEEDS = registerItem("yellow_bell_pepper_seeds",
             new AliasedBlockItem(ModBlocks.YELLOW_BELL_PEPPER_CROP, new Item.Settings()));
+    public static final Item CORN_SEEDS = registerItem("corn_seeds",
+            new AliasedBlockItem(ModBlocks.CORN_CROP, new Item.Settings()));
+    public static final Item CORN = registerItem("corn", new Item(new Item.Settings().food(ModFoodComponents.CORN)));
 
     public static final Item GREEN_BELL_PEPPER = registerItem("green_bell_pepper", new Item(new Item.Settings().food(ModFoodComponents.GREEN_BELL_PEPPER)));
     public static final Item RED_BELL_PEPPER = registerItem("red_bell_pepper", new Item(new Item.Settings().food(ModFoodComponents.RED_BELL_PEPPER)));

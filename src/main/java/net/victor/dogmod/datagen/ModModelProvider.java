@@ -10,6 +10,7 @@ import net.victor.dogmod.block.ModBlocks;
 import net.victor.dogmod.block.custom.crops.GreenBellPepperCropBlock;
 import net.victor.dogmod.block.custom.crops.RedBellPepperCropBlock;
 import net.victor.dogmod.block.custom.crops.YellowBellPepperCropBlock;
+import net.victor.dogmod.block.custom.crops.CornCropBlock;
 import net.victor.dogmod.item.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -30,6 +31,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCrop(ModBlocks.GREEN_BELL_PEPPER_CROP, GreenBellPepperCropBlock.AGE, 0, 1, 2, 3);
         blockStateModelGenerator.registerCrop(ModBlocks.RED_BELL_PEPPER_CROP, RedBellPepperCropBlock.AGE, 0, 1, 2, 3);
         blockStateModelGenerator.registerCrop(ModBlocks.YELLOW_BELL_PEPPER_CROP, YellowBellPepperCropBlock.AGE, 0, 1, 2, 3);
+        blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROP, CornCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7, 8);
     }
 
     @Override
@@ -53,6 +55,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GREEN_BELL_PEPPER, Models.GENERATED);
         itemModelGenerator.register(ModItems.RED_BELL_PEPPER, Models.GENERATED);
         itemModelGenerator.register(ModItems.YELLOW_BELL_PEPPER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORN, Models.GENERATED);
 
         itemModelGenerator.registerArmor((ArmorItem) ModItems.BULB_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.BULB_CHESTPLATE);

@@ -44,6 +44,9 @@ public class ModItemGroups {
                         entries.add(ModItems.RED_BELL_PEPPER_SEEDS);
                         entries.add(ModItems.YELLOW_BELL_PEPPER_SEEDS);
 
+                        entries.add(ModItems.CORN_SEEDS);
+                        entries.add(ModItems.CORN);
+
                         entries.add(ModItems.GRAPE);
                         entries.add(ModItems.SVARTBIT);
 

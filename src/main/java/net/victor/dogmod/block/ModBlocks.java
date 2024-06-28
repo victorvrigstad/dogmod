@@ -14,6 +14,7 @@ import net.victor.dogmod.block.custom.SoundBlock;
 import net.victor.dogmod.block.custom.crops.GreenBellPepperCropBlock;
 import net.victor.dogmod.block.custom.crops.RedBellPepperCropBlock;
 import net.victor.dogmod.block.custom.crops.YellowBellPepperCropBlock;
+import net.victor.dogmod.block.custom.crops.CornCropBlock;
 
 public class ModBlocks {
     public static final Block DOG_BLOCK = registerBlock("dog_block",
@@ -34,6 +35,9 @@ public class ModBlocks {
             new RedBellPepperCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
     public static final Block YELLOW_BELL_PEPPER_CROP = Registry.register(Registries.BLOCK, new Identifier(DogMod.MOD_ID, "yellow_bell_pepper_crop"),
             new YellowBellPepperCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
+
+    public static final Block CORN_CROP = Registry.register(Registries.BLOCK, new Identifier(DogMod.MOD_ID, "corn_crop"),
+            new CornCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
 
 
     public static final Block SOUND_BLOCK = registerBlock("sound_block",

@@ -1,4 +1,4 @@
-// 1.20.6	2024-05-27T15:34:43.2626963	dog mod/Tags for minecraft:block
+// 1.20.6	2024-06-20T21:26:21.0620844	dog mod/Tags for minecraft:block
 c5f16caabf0c558ec81832ff84eab5bb21a010a1 data\minecraft\tags\blocks\needs_iron_tool.json
 260555e96acd0dff83cf7a9ac86cfc8aaa8bc44a data\dogmod\tags\blocks\metal_detector_detectable_blocks.json
 cfab2ab481bf476a645d326b87627918009b9e50 data\fabric\tags\blocks\needs_tool_level_4.json

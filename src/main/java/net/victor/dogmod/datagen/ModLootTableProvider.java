@@ -3,12 +3,11 @@ package net.victor.dogmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
 import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.AnyOfLootCondition;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
@@ -16,13 +15,13 @@ import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
-import net.minecraft.particle.BlockStateParticleEffect;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryWrapper;
 import net.victor.dogmod.block.ModBlocks;
 import net.victor.dogmod.block.custom.crops.GreenBellPepperCropBlock;
 import net.victor.dogmod.block.custom.crops.RedBellPepperCropBlock;
 import net.victor.dogmod.block.custom.crops.YellowBellPepperCropBlock;
+import net.victor.dogmod.block.custom.crops.CornCropBlock;
 import net.victor.dogmod.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
@@ -58,6 +57,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 .properties(StatePredicate.Builder.create()
                         .exactMatch(YellowBellPepperCropBlock.AGE, 3));
         addDrop(ModBlocks.YELLOW_BELL_PEPPER_CROP, cropDrops(ModBlocks.YELLOW_BELL_PEPPER_CROP, ModItems.YELLOW_BELL_PEPPER, ModItems.YELLOW_BELL_PEPPER_SEEDS, builder3));
+
+        AnyOfLootCondition.Builder builder4 =
+            BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP).properties(StatePredicate.Builder.create()
+                            .exactMatch(YellowBellPepperCropBlock.AGE, 7))
+                    .or(BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP).properties(StatePredicate.Builder.create()
+                            .exactMatch(CornCropBlock.AGE, 8)));
+        addDrop(ModBlocks.CORN_CROP, cropDrops(ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORN_SEEDS, builder4));
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

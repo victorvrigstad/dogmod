@@ -1,8 +1,9 @@
-// 1.20.6	2024-05-27T15:34:43.2636937	dog mod/Block Loot Tables
+// 1.20.6	2024-06-20T21:26:21.0620844	dog mod/Block Loot Tables
 98dafc9ace67c93c657c60af5e495bf6be0b930c data\dogmod\loot_tables\blocks\dog_block2.json
 e3a9312594e257ac882561b399da194bba984f98 data\dogmod\loot_tables\blocks\red_bell_pepper_crop.json
 ca5c791fbda8a3919c0538de418e0664da31514d data\dogmod\loot_tables\blocks\green_bell_pepper_crop.json
 7382946ae43677c276494b5012299611d99e94f1 data\dogmod\loot_tables\blocks\yellow_bell_pepper_crop.json
+7869a3276f6c64325fece65ae442e14a45f3f1e8 data\dogmod\loot_tables\blocks\corn_crop.json
 e18fa2c3d4292a16963e6487ce0d00ad70de4aae data\dogmod\loot_tables\blocks\bulb_ore.json
 dae8d9b1a28fffe95a2fd946706995f529174159 data\dogmod\loot_tables\blocks\sound_block.json
 0a1f877f614caf4e77dce92fd8edcc8ac6bb2608 data\dogmod\loot_tables\blocks\bulb_block.json
