@@ -11,7 +11,6 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
-import net.victor.dogmod.DogMod;
 import net.victor.dogmod.item.ModItems;
 
 public class CornCropBlock extends CropBlock {
@@ -75,7 +74,6 @@ public class CornCropBlock extends CropBlock {
 
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        //if(world.getBlockState(pos.down(1)).getBlock() instanceof CornCropBlock) return false;
         return super.canPlaceAt(state, world, pos) || (world.getBlockState(pos.down(1)).isOf(this) &&
                 world.getBlockState(pos.down(1)).get(AGE) == 7);
     }

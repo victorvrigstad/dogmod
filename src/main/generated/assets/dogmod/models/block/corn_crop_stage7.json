@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "dogmod:block/corn_crop_stage7"
+  }
+}

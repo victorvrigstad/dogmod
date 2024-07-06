@@ -25,18 +25,14 @@ public class UseItemHandler implements UseBlockCallback {
         if(world.isClient() || hand != Hand.MAIN_HAND) {
             return ActionResult.PASS;
         }
-        //if(player.getInventory().main.getFirst().equals(ItemStack.EMPTY)) {
-        //    return ActionResult.PASS;
-        //}
         BlockPos blockPos = hitResult.getBlockPos();
         BlockState blockState = world.getBlockState(blockPos);
         if (!(blockState.getBlock() instanceof CropBlock cropBlock)) {
             return ActionResult.PASS;
         }
-        if (cropBlock.getAge(blockState) != cropBlock.getMaxAge() /*|| (world.getBlockState(blockPos.up(1)).getBlock() instanceof CornCropBlock)*/) {
+        if (cropBlock.getAge(blockState) != cropBlock.getMaxAge()) {
             return ActionResult.PASS;
         }
-        DogMod.LOGGER.info("" +cropBlock.getMaxAge());
         if ((cropBlock.getAge(blockState) >= 7)) {
             world.setBlockState(blockPos.down(1), cropBlock.withAge(0));
             Block.dropStacks(blockState, world, blockPos);
@@ -45,12 +41,6 @@ public class UseItemHandler implements UseBlockCallback {
             world.setBlockState(blockPos, cropBlock.withAge(0));
             Block.dropStacks(blockState, world, blockPos);
         }
-
-
-        //world.setBlockState(blockPos, cropBlock.withAge(0));
-        //Block.dropStacks(blockState, world, blockPos);
-        //player.getInventory().
-        //final List<ItemStack> drops = cropBlock.
         return ActionResult.SUCCESS;
     }
 
