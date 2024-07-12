@@ -11,10 +11,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.victor.dogmod.DogMod;
 import net.victor.dogmod.block.custom.SoundBlock;
-import net.victor.dogmod.block.custom.crops.GreenBellPepperCropBlock;
-import net.victor.dogmod.block.custom.crops.RedBellPepperCropBlock;
-import net.victor.dogmod.block.custom.crops.YellowBellPepperCropBlock;
-import net.victor.dogmod.block.custom.crops.CornCropBlock;
+import net.victor.dogmod.block.custom.crops.*;
 
 public class ModBlocks {
     public static final Block DOG_BLOCK = registerBlock("dog_block",
@@ -38,6 +35,9 @@ public class ModBlocks {
 
     public static final Block CORN_CROP = Registry.register(Registries.BLOCK, new Identifier(DogMod.MOD_ID, "corn_crop"),
             new CornCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
+
+    public static final Block LETTUCE_CROP = Registry.register(Registries.BLOCK, new Identifier(DogMod.MOD_ID, "lettuce_crop"),
+            new LettuceCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
 
 
     public static final Block SOUND_BLOCK = registerBlock("sound_block",

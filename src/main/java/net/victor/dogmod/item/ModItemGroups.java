@@ -16,14 +16,19 @@ public class ModItemGroups {
             new Identifier(DogMod.MOD_ID, "dog"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.dog"))
                     .icon(() -> new ItemStack(ModItems.DOG)).entries((displayContext, entries) -> {
+
                         entries.add(ModItems.DOG);
                         entries.add(ModItems.DOG2);
-
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModItems.CROP_HARVESTER);
 
+
+
                         entries.add(ModItems.RAW_BULB);
                         entries.add(ModItems.BULB_INGOT);
+                        entries.add(ModBlocks.BULB_BLOCK);
+                        entries.add(ModBlocks.BULB_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_BULB_ORE);
 
                         entries.add(ModItems.BULB_PICKAXE);
                         entries.add(ModItems.BULB_AXE);
@@ -36,28 +41,28 @@ public class ModItemGroups {
                         entries.add(ModItems.BULB_LEGGINGS);
                         entries.add(ModItems.BULB_BOOTS);
 
+
+
                         entries.add(ModItems.GREEN_BELL_PEPPER);
                         entries.add(ModItems.RED_BELL_PEPPER);
                         entries.add(ModItems.YELLOW_BELL_PEPPER);
+                        entries.add(ModItems.LETTUCE);
 
                         entries.add(ModItems.GREEN_BELL_PEPPER_SEEDS);
                         entries.add(ModItems.RED_BELL_PEPPER_SEEDS);
                         entries.add(ModItems.YELLOW_BELL_PEPPER_SEEDS);
+                        entries.add(ModItems.LETTUCE_SEEDS);
 
                         entries.add(ModItems.CORN_SEEDS);
                         entries.add(ModItems.CORN);
 
+
+
                         entries.add(ModItems.GRAPE);
                         entries.add(ModItems.SVARTBIT);
-
-                        entries.add((ModBlocks.DOG_BLOCK));
-                        entries.add((ModBlocks.DOG_BLOCK2));
-
-                        entries.add((ModBlocks.BULB_BLOCK));
-                        entries.add((ModBlocks.BULB_ORE));
-                        entries.add((ModBlocks.DEEPSLATE_BULB_ORE));
-
-                        entries.add((ModBlocks.SOUND_BLOCK));
+                        entries.add(ModBlocks.DOG_BLOCK);
+                        entries.add(ModBlocks.DOG_BLOCK2);
+                        entries.add(ModBlocks.SOUND_BLOCK);
 
                     }).build());
 

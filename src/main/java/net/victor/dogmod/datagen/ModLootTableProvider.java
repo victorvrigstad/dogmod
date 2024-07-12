@@ -64,6 +64,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                     .or(BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP).properties(StatePredicate.Builder.create()
                             .exactMatch(CornCropBlock.AGE, 8)));
         addDrop(ModBlocks.CORN_CROP, cropDrops(ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORN_SEEDS, builder4));
+
+        BlockStatePropertyLootCondition.Builder builder5 = BlockStatePropertyLootCondition.builder(ModBlocks.LETTUCE_CROP)
+                .properties(StatePredicate.Builder.create()
+                        .exactMatch(YellowBellPepperCropBlock.AGE, 3));
+        addDrop(ModBlocks.LETTUCE_CROP, cropDrops(ModBlocks.LETTUCE_CROP, ModItems.LETTUCE, ModItems.LETTUCE_SEEDS, builder5));
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

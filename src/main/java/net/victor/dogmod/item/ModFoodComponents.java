@@ -11,4 +11,5 @@ public class ModFoodComponents {
     public static final FoodComponent RED_BELL_PEPPER = new FoodComponent.Builder().nutrition(3).saturationModifier(0.25f).build();
     public static final FoodComponent YELLOW_BELL_PEPPER = new FoodComponent.Builder().nutrition(3).saturationModifier(0.25f).build();
     public static final FoodComponent CORN = new FoodComponent.Builder().nutrition(3).saturationModifier(0.25f).build();
+    public static final FoodComponent LETTUCE = new FoodComponent.Builder().nutrition(3).saturationModifier(0.25f).build();
 }
